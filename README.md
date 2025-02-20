@@ -1,66 +1,52 @@
-# Caption Downloader Bot
 
-This is a Telegram bot that downloads captions from Instagram Reels and Stories and sends them to the user.
 
-## Features
-- Download captions from Instagram Reels ✅
-- Download captions from Instagram Stories ✅
-- Run locally on your computer ✅
-- Run on Android using Termux ✅
+---
 
-## Installation & Setup
+# Instagram Caption Downloader  
 
-### Running Locally
-1. Install Python (if not already installed).
-2. Clone this repository:
-   ```sh
-   git clone https://github.com/zenzer0s/Caption-downloader.git
-   ```
-3. Navigate to the project directory:
-   ```sh
-   cd Caption-downloader
-   ```
-4. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-5. Set up your Telegram bot token.
-6. Run the bot:
-   ```sh
-   python bot.py
-   ```
+A bot that allows you to download captions from Instagram Reels. You **must** run it on your own machine (Windows, Linux, Mac, or Android via Termux). No server setup is provided, but you can use **my bot token**, so no need to create your own!  
 
-### Running on Android (Termux)
-1. Install Termux from the Play Store.
-2. Update and install Python:
-   ```sh
-   pkg update && pkg upgrade
-   pkg install python git
-   ```
-3. Clone the repository:
-   ```sh
-   git clone https://github.com/zenzer0s/Caption-downloader.git
-   ```
-4. Navigate to the project directory:
-   ```sh
-   cd Caption-downloader
-   ```
-5. Install dependencies:
-   ```sh
-   pip install -r requirements.txt
-   ```
-6. Run the bot:
-   ```sh
-   python bot.py
-   ```
+## Features  
 
-## Usage
-- Send an Instagram Reel or Story link to the bot.
-- The bot will extract and send back the caption.
+✅ Download captions from Instagram Reels  
+✅ Run locally on Windows, Linux, Mac, and Android (Termux)  
+✅ Open-source and customizable  
+✅ No need to create a bot token, use mine!  
 
-## Contributing
-Feel free to submit issues or pull requests to improve this project!
+## How to Use  
 
-## License
-This project is open-source under the MIT License.
+### Run on Your Own Machine (Windows/Linux/Mac/Android)  
 
+#### 1️⃣ Install Requirements  
+Make sure you have Python installed. If not, install it:  
+- **Windows**: [Download Python](https://www.python.org/downloads/)  
+- **Linux/Mac**: Install via package manager (`sudo apt install python3` or `brew install python`)  
+- **Android (Termux)**:  
+  ```
+  pkg update && pkg upgrade
+  pkg install python git
+  ```
+
+#### 2️⃣ Clone the Repository  
+```
+git clone <repo-url>
+cd Caption-downloader
+```
+
+#### 3️⃣ Install Dependencies  
+```
+pip install -r requirements.txt
+```
+
+#### 4️⃣ Run the Bot  
+```
+python bot.py
+```
+
+🚀 **You are now ready to download Instagram captions!**  
+
+## License  
+
+This project is licensed under the MIT License.  
+
+---
