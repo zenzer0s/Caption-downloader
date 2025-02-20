@@ -2,8 +2,13 @@ import logging
 import instaloader
 import nest_asyncio
 import asyncio
+import os
+from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, ContextTypes, filters
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Apply nest_asyncio patch to allow nested event loops.
 nest_asyncio.apply()
@@ -16,7 +21,8 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
 )
 
-BOT_TOKEN = "8185026608:AAEvJmLNJuijF8R4_F23JOcZRvyf8K-JIcA"
+# Get the bot token from .env file
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Send me an Instagram Reel link, and I'll fetch the caption!")
