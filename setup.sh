@@ -23,13 +23,14 @@ echo "📦 Installing dependencies..."
 pip install --upgrade pip
 pip install -r requirements.txt
 
-# Check if .env file exists, if not, create one
+# Check if .env file exists, if not, create one and ask for token
 if [ ! -f ".env" ]; then
-    echo "🔑 Creating .env file..."
-    echo 'BOT_TOKEN="YOUR_BOT_TOKEN_HERE"' > .env
-    echo "⚠️ Replace YOUR_BOT_TOKEN_HERE in .env file before running the bot!"
+    echo "🔑 .env file not found. Enter your Telegram Bot Token:"
+    read BOT_TOKEN
+    echo "BOT_TOKEN=$BOT_TOKEN" > .env
+    echo "✅ .env file created with your bot token!"
 else
-    echo "✅ .env file already exists!"
+    echo "✅ .env file already exists! Skipping token setup."
 fi
 
 # Start the bot
