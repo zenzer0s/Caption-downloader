@@ -1,17 +1,16 @@
-
-
 ---
 
 # Instagram Caption Downloader  
 
-A bot that allows you to download captions from Instagram Reels. You **must** run it on your own machine (Windows, Linux, Mac, or Android via Termux). No server setup is provided, but you can use **my bot token**, so no need to create your own!  
+A bot that allows you to download captions from Instagram Reels. You **must** run it on your own machine (Windows, Linux, Mac, or Android via Termux). No server setup is provided, but **you can use this bot**!  
+
+🚀 **Try it here:** [Captionss Bot](https://t.me/Captionss_bot)  
 
 ## Features  
 
 ✅ Download captions from Instagram Reels  
 ✅ Run locally on Windows, Linux, Mac, and Android (Termux)  
 ✅ Open-source and customizable  
-✅ No need to create a bot token, use mine!  
 
 ## How to Use  
 
@@ -29,7 +28,7 @@ Make sure you have Python installed. If not, install it:
 
 #### 2️⃣ Clone the Repository  
 ```
-git clone <repo-url>
+git clone https://github.com/zenzer0s/Caption-downloader.git
 cd Caption-downloader
 ```
 
